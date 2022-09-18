@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facebook Clone</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <nav id="nav">
+      <ul class="left-ul">
+        <li><a href="">Facebook</a></li>
+      </ul>
+      <div class="empty"></div>
+      <form action="login.php" method="post">
+        <ul class="right-ul">
+          <li>
+            <input
+              type="text"
+              class="nav-control"
+              name="phoneoremail"
+              placeholder="Enter email..."
+            />
+          </li>
+          <li>
+            <input
+              type="password"
+              class="nav-control"
+              name="password"
+              placeholder="Enter password..."
+            />
+          </li>
+          <li>
+            <input type="submit" class="nav-btn" value="Login" />
+          </li>
+        </ul>
+      </form>
+      <form name="forgot" action="forgot_validate.php" method="post">
+        <input type="submit" class="nav-btn-fp" value="Forget Password" />
+      </form>
+    </nav>
+    <!-- Close nav -->
+
+    <div class="container">
+      <div class="left-section">
+        <div class="left-heading">
+          <h3>
+            Facebook helps you connect and share with the people in your life.
+          </h3>
+          <div class="image">
+            <img src="./assets/bg.webp" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="right-section">
+        <h1 class="form-heading">Create an account</h1>
+        <p class="text">It's free and always will be.</p>
+        <form action="signup.php" method="post" id="formSection">
+          <div class="form-group">
+            <input
+              type="text"
+              class="control"
+              name="firstname"
+              placeholder="First Name"
+            />
+            <input
+              type="text"
+              class="control"
+              name="lastname"
+              placeholder="Last Name"
+            />
+          </div>
+
+          <div class="form-group">
+            <input
+              type="email"
+              class="control"
+              name="phoneoremail"
+              placeholder="Mobile number or Email"
+            />
+          </div>
+
+          <div class="form-group">
+            <input
+              type="password"
+              class="control"
+              name="password"
+              placeholder="New Password"
+            />
+          </div>
+
+          <div class="form-group">
+            <p class="birth">Birthday</p>
+            <select id="d" name="d"></select><!--Java Script is used for adding options-->
+            <select id="m" name="m"></select>
+            <select id="y" name="y"></select>
+          </div>
+          <div class="form-group">
+            <input type="radio" name="gender" id="female" value="female"/> <b>Female</b>
+            <input type="radio" name="gender" id="male" value="male" /> <b>Male</b>
+          </div>
+          <div class="form-group">
+            <p class="someText">
+              By clicking Sign Up, you agree to our Terms, Data Policy and
+              Cookie Policy. You may receive SMS notifications from us and can
+              opt out at any time.
+            </p>
+          </div>
+          <div class="form-group">
+            <button class="btn" type="submit">Sign Up</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>

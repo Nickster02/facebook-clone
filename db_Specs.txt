@@ -1,0 +1,15 @@
+DataBase Name : facebookdb
+
+
+Table Name : details
+
+
+Table Attributes: 
+
+id : int(20) [AUTO INCREMENT];
+firstname : varchar(25);
+lastname : varchar(25);
+phoneoremail : varchar(25);
+gender : varchar(6);
+dob : date;;
+password : varchar(10);
